@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+	
+	<bean id ="1" class ="com.Autowire.Author">
+	
+	
+     <property name = "authorid" value="11" ></property> 
+	<property name ="authorname" value="sowmya"></property> 
+	 
+	</bean>
+	
+	<bean id ="2" class ="com.Autowire.Book" autowire="byType">
+	
+	
+     <property name = "bookid" value="10" ></property> 
+	<property name = "bookname" value="karma"></property>
+	<property name = "bookprice" value="44"></property>  
+	 
+	
+	</bean>
+	
+	</beans>
